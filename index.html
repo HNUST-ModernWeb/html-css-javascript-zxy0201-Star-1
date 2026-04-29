@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人信息卡片</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>个人信息卡片</h1>
+        <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">
+            <i id="theme-icon" class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <div class="card">
+        <div class="avatar-container">
+            <div id="avatar" class="avatar"></div>
+            <label for="avatar-input" class="avatar-upload">
+                <i class="fas fa-camera"></i>
+            </label>
+            <input type="file" id="avatar-input" accept="image/*">
+        </div>
+
+        <h2 id="name-display" class="name">周星屹</h2>
+        <p id="bio-display" class="bio">在这里添加你的个人简介...</p>
+
+        <div class="edit-mode">
+            <div class="form-group">
+                <label for="name-input">姓名</label>
+                <input type="text" id="name-input" placeholder="请输入姓名">
+            </div>
+            <div class="form-group">
+                <label for="bio-input">个人简介</label>
+                <textarea id="bio-input" placeholder="请输入个人简介"></textarea>
+            </div>
+            <button id="save-btn" class="save-btn">保存</button>
+        </div>
+    </div>
+
+    <footer>
+        个人信息卡片 © 2024
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
